@@ -37,7 +37,7 @@ $('body').loadHtml({
 
 ## Credits
 created by Anas Nakawa [github](//github.com/anasnakawa), [twitter](//twitter.com/anasnakawa),  
-special thanks for Florian Schäfer for the great help [github](//github.com/fschaefer)
+special thanks for [Florian Schäfer](//github.com/fschaefer) for his help.
 
 ## License
 Released under the [MIT License](http://www.opensource.org/licenses/mit-license.php)

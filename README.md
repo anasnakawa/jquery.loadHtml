@@ -2,7 +2,7 @@
 just a simple tool to help splitting a large html document into small files and load them using html5 `data-attributes`.. nothing more..nothing less
 
 ## Why
-it could be useful to speed up the prototyping by making your html markup more reusabale.heets mostly will look the same, except for direction related properties (`float, text-align, padding, margin ..etc` ), so when you write a `float: left` in some `ltr` stylesheet, you'll have to write it again as `float: right` for the `rtl` one
+it could be useful to speed up the prototyping by making your html markup more reusabale.
 
 ## When I SHOULD NOT use it ?
 on a live production app/website, since each separate html component will be requested by an `HTTP` request

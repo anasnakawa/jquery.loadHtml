@@ -2,10 +2,10 @@
 just a simple tool to help splitting a large html document into small files and load them using html5 `data-attributes`.. nothing more..nothing less
 
 ## Why
-it could be useful to speed up the prototyping by making your html markup more reusabale.
+it could be useful to speed up the prototyping by making your html markup more reusabale/readable by separating each component into a separate html file.
 
 ## When I SHOULD NOT use it ?
-on a live production app/website, since each separate html component will be requested by an `HTTP` request
+on a live production app/website, since each separate html component will be requested by an `HTTP` request..
 
 ## How to use it
 in your html document/component, just reference the html component using `data-component-url` attribute

@@ -8,7 +8,7 @@ it could be useful to speed up the prototyping by making your html markup more r
 on a live production app/website, since each separate html component will be requested by an `HTTP` request
 
 ## How to use it
-create three sass files
+in your html document/component, just reference the html component using `data-component-url` attribute
 ```html
 <div data-component-url="components/header.html"></div>
 <div data-component-url="components/side-bar.html"></div>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jquery.loadhtml by anasnakawa</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Jquery.loadhtml</h1>
+        <p>loading external resources into the dom dynamically via data-attribute</p>
+        <p class="view"><a href="https://github.com/anasnakawa/jquery.loadHtml">View the Project on GitHub <small>anasnakawa/jquery.loadHtml</small></a></p>
+        <ul>
+          <li><a href="https://github.com/anasnakawa/jquery.loadHtml/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/anasnakawa/jquery.loadHtml/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/anasnakawa/jquery.loadHtml">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>jQuery.loadHtml</h2>
+
+<p>just a simple tool to help splitting a large html document into small files and load them using html5 <code>data-attributes</code>.. nothing more..nothing less</p>
+
+<h2>Why</h2>
+
+<p>it could be useful to speed up the prototyping by making your html markup more reusabale/readable by separating each component into a separate html file.</p>
+
+<h2>When I SHOULD NOT use it ?</h2>
+
+<p>on a live production app/website, since each separate html component will be requested by an <code>HTTP</code> request..</p>
+
+<h2>How to use it</h2>
+
+<p>in your html document/component, just reference the html component using <code>data-component-url</code> attribute</p>
+
+<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">data-component-url=</span><span class="s">"components/header.html"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">data-component-url=</span><span class="s">"components/side-bar.html"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">data-component-url=</span><span class="s">"components/content.html"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">data-component-url=</span><span class="s">"components/footer.html"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div>
+
+<h2>Installing via Bower</h2>
+
+<pre><code>bower install jquery.loadHtml
+</code></pre>
+
+<h2>Installing via Yeoman</h2>
+
+<pre><code>yeoman install jquery.loadHtml
+</code></pre>
+
+<h2>Reference</h2>
+
+<div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'body'</span><span class="p">).</span><span class="nx">loadHtml</span><span class="p">({</span>
+  <span class="nx">attr</span><span class="o">:</span> <span class="s1">'data-component-url'</span>  <span class="c1">// default data attribute for component url</span>
+  <span class="p">,</span> <span class="nx">extension</span><span class="o">:</span> <span class="s1">'html'</span>         <span class="c1">// components file extension, if provided, no need to append it in the component-url attribute</span>
+  <span class="p">,</span> <span class="nx">componentsFolder</span><span class="o">:</span> <span class="s1">''</span>      <span class="c1">// root folder where all the components can be found, if provided, no need to put prepend it in the component-url attribute</span>
+<span class="p">});</span>
+</pre></div>
+
+<h2>Credits</h2>
+
+<p>created by Anas Nakawa <a href="//github.com/anasnakawa">github</a>, <a href="//twitter.com/anasnakawa">twitter</a>,<br>
+special thanks for <a href="//github.com/fschaefer">Florian Schäfer</a> for his help.</p>
+
+<h2>License</h2>
+
+<p>Released under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/anasnakawa">anasnakawa</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>

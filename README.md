@@ -29,7 +29,7 @@ yeoman install jquery.loadHtml
 ## Reference
 ```js
 $('body').loadHtml({
-  attr: 'data-component-url'  // default data attribute for component url
+    attr: 'data-component-url'  // default data attribute for component url
   , extension: 'html'         // components file extension, if provided, no need to append it in the component-url attribute
   , componentsFolder: ''      // root folder where all the components can be found, if provided, no need to put prepend it in the component-url attribute
 });
